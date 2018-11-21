@@ -13,7 +13,10 @@ body {
   color: #131615;
   line-height: 1.25;
   font-size: 1.3em;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
   /*  background-attachment: fixed;
     background-size: 100vh;*/
 }
@@ -41,6 +44,7 @@ h1 {
   height: 15vw;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 960px){
  h1 {
    font-weight: 900;
@@ -56,6 +60,22 @@ h1 {
  h1 {
    font-size: 1.3em;
  }
+=======
+@media screen and (max-width: 960px) {
+  h1 {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 0;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.3em;
+  }
+>>>>>>> master
 }
 
 h2 {
@@ -157,7 +177,10 @@ h2, h3, h4, h5 {
   }
   */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
   &.active {
 
     #{$p}__patty {
@@ -188,7 +211,11 @@ section {
   padding-left: 8.25%;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 960px){
+=======
+@media screen and (max-width: 960px) {
+>>>>>>> master
   section {
     width: 93%;
 
@@ -249,19 +276,30 @@ body {
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 960px){
+=======
+@media screen and (max-width: 960px) {
+>>>>>>> master
   .quotation h2 {
     font-size: .9em;
   }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 640px){
+=======
+@media screen and (max-width: 640px) {
+>>>>>>> master
   .quotation h2 {
     font-size: .6em;
   }
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 p {
   word-break: break-word;
 }
@@ -318,7 +356,11 @@ p {
   text-align: center;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 960px){
+=======
+@media screen and (max-width: 960px) {
+>>>>>>> master
   .quote-button {
     width: 100%;
     font-size: 1em;
@@ -410,6 +452,10 @@ p {
   width: 64.65vw;
   padding: 2.25vw 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 @media screen and (max-width: 960px) {
   .frame.full-width {
     width: 100%;
@@ -632,8 +678,28 @@ h2.quidditch {
   font-size: 2em;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 960px){
   .frame.about9 {
     display: none;
   }
+=======
+@media screen and (max-width: 960px) {
+  .frame.about9 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+.mobile {
+  display: none;
+>>>>>>> master
 }

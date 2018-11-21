@@ -500,5 +500,16 @@ h2.quidditch {
 @media screen and (max-width: 960px) {
   .frame.about9 {
     display: none; } }
+<<<<<<< HEAD
+=======
+@media screen and (max-width: 640px) {
+  .desktop {
+    display: none; }
+
+  .mobile {
+    display: block; } }
+.mobile {
+  display: none; }
+>>>>>>> master
 
 /*# sourceMappingURL=style.css.map */
