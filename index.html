@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hogwart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="./js/quote-generator.js"></script>
+    <script src="./js/hamburger-menu.js"></script>
+    <script src="./js/button-more.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+<article class="quotation">
+    <div class="info">
+        <div id="date"></div>
+        <div id="time"></div>
+    </div>
+    <div class="quote">
+        <h1 id="quote-display">
+            Youth cannot know how age thinks and feels, but old men are guilty if they forget what it was to be young.
+        </h1>
+        <h2>–Albus Dumbledore</h2>
+    </div>
+    <button class="quote-button">Generate next sentence</button>
+</article>
+<header>
+    <nav class="nav">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#houses" class="nav__link">Houses</a>
+        <a href="#subjects" class="nav__link">Subjects</a>
+        <a href="#quidditch" class="nav__link">Quidditch</a>
+        <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="hamburger">
+        <span class="hamburger__patty"></span>
+        <span class="hamburger__patty"></span>
+        <span class="hamburger__patty"></span>
+    </div>
+</header>
+<section>
+
+
+    <article id="about" class="about">
+        <div class="col-left">
+
+            <div class="frame">
+                <img data-aos="fade-right" data-aos-duration="1000" src="images/about/about-1.jpg">
+            </div>
+
+            <div class="frame left-bottom">
+                <!--<img src="images/about/about-3.jpg">-->
+                <!--    <img src="images/about/about-5.jpg">-->
+                <img data-aos="fade-right" data-aos-duration="1100" src="images/about/about-10.jpg"/>
+            </div>
+
+            <!--            <div data-aos="fade-right" data-aos-duration="1200" class="frame">
+                            <img src="images/about/about-7.jpg">
+                        </div>
+
+                        <div data-aos="fade-right" data-aos-duration="1300" class="frame">
+                            <img src="images/about/about-6.jpg">
+                        </div>-->
+
+
+        </div>
+        <div class="col-center">
+            <h2>About Hogwart</h2>
+            <p> Hogwarts School of Witchcraft and Wizardry is the British wizarding school, located in the Scottish
+                Highlands. It takes students from the United Kingdom of Great Britain and Northern Ireland, and also
+                the Republic of Ireland.
+                The castle is located in the mountains near a loch. The precise location of the school can never be
+                uncovered because it was rendered Unplottable. To Muggles, the school looks like an old abandoned
+                castle.
+                Similarly, most wizarding schools locations are protected in order to prevent their ways of teaching
+                being
+                revealed, as well as protect the students and schools themselves from any harm.
+                Established around the 10th century, Hogwarts is considered to be one of the finest magical institutions
+                in
+                the Wizarding World, though other notable schools included Beauxbatons Academy of Magic in France,
+                the Durmstrang Institute in Scandinavia, and Ilvermorny School of Witchcraft and Wizardry in the United
+                States. Children with magical abilities are enrolled at birth, and acceptance is confirmed by owl
+                post at
+                age eleven. However, if the child in question is a Muggle-born, a professor from the school would come
+                and
+                inform the child's parents.
+                The school's motto is Draco Dormiens Nunquam Titillandus (Draco Dormiens Nvnqvam Titillandvs), which,
+                translated from Latin, means "Never tickle a sleeping dragon".
+                The three highest towers are the Astronomy, Ravenclaw, and Gryffindor ones. <!--which is set upon huge rocks above a magnificent lake.
+                The castle has witnessed centuries and has a long history of ancient magic--></p>
+
+
+            <div class="frame full-width">
+                <img data-aos="fade-left" data-aos-duration="1100" src="images/about/about-4.jpg"/>
+            </div>
+
+
+            <p>
+                Hogwarts Castle
+                Hogwarts School is located in Hogwarts Castle, a large castle somewhere in the Highlands of Scotland.
+                The
+                castle has extensive grounds with sloping lawns, flowerbeds and vegetable patches, a loch (called
+                the Black
+                Lake), a large dense forest (called the Forbidden Forest), several greenhouses and other outbuildings,
+                and a
+                full-size Quidditch Pitch. </p>
+            <p> There is also an owlery, which houses all the owls owned by the school and
+                those
+                owned by students.
+
+                The
+                castle is known for its many updates and changes in layout throughout the years, such as regenerating
+                itself
+                after the Battle of Hogwarts. It should be noted that some rooms in the school tend to "move around,"
+                and so
+                do the steps on the Grand Staircase. Albus Dumbledore once noted that even he did not know all of
+                Hogwarts'
+                secrets.
+                The school has numerous charms and spells on and around it that make it impossible for a Muggle to see
+                it
+                as
+                the school; rather, they see only ruins and several warnings of danger. Witches and wizards
+                cannot Apparate or Disapparatein Hogwarts grounds, except for when the Headmaster lifts the enchantment,
+                whether only in certain areas or for the entire campus, so as to make the school less vulnerable when it
+                serves the headmaster to allow Apparition. Electricity and electronic devices are not found at
+                Hogwarts. 
+            </p>
+
+            <!--            <p>
+                            Typical school year
+                            "Now… to our new students, welcome, to our old students, welcome back! Another year full of magical
+                            education awaits you…"
+                            —Welcoming Feast speech
+
+                            The scarlet Hogwarts Express steam engine on Platform 9¾
+                            Term begins on 1 September. Students usually reach Hogwarts via the Hogwarts Express, which leaves from
+                            Platform 9¾ of London's King's Cross Station at 11 a.m. sharp. There seemed to be other ways of entering
+                            the
+                            school, such as via broomsticks or Floo Powder, or simply Apparating to a nearby location such
+                            as Hogsmeade.
+                            Missing the Hogwarts Express for any reason is a very serious problem, but will not cost the student
+                            points
+                            as long as they get there before the term has officially started. The Hogwarts Express brings the
+                            students
+                            to Hogsmeade station, where the first years traditionally cross the Black Lake in boats with
+                            the gamekeeper,
+                            and go under an opening in the rocks upon which Hogwarts is built, through a curtain of ivy, and finally
+                            into an underground harbour.
+                            Older students travel on the road in carriages pulled by Thestrals (invisible to any that hasn't
+                            witnessed
+                            death) to the castle. The Welcoming Feast takes place in the Great Hall. This feast includes the Sorting
+                            ceremony, followed by a few words from the current Headmaster or Headmistress, the banquet starts after
+                            this, including large quantities of food and drink. The feast is closed with a few more words from the
+                            Headmaster or headmistress, but it also included the usual "start-of-term notices".
+                        </p>-->
+
+        </div>
+        <div class="col-right">
+
+            <!--            <div data-aos="fade-left" data-aos-duration="1000" class="frame">
+                            <img src="images/about/about-2.jpg">
+                        </div>
+                        <div data-aos="fade-left" data-aos-duration="1100" class="frame">
+                            <img src="images/about/about-4.jpg">
+                        </div>
+                       -->
+
+            <div class="frame right-side">
+                <img data-aos="fade-left" data-aos-duration="1200" src="images/about/about-11.jpg">
+            </div>
+
+        </div>
+
+
+    </article>
+
+    <div class="frame about9">
+        <img data-aos="fade-left" data-aos-duration="1300" src="images/about/about-9.jpg"/>
+    </div>
+
+
+    <h2 id="houses" class="characteristic">Characteristics of Hogwart's houses</h2>
+    <article class="houses">
+
+        <div class="house">
+
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="house-show gryffindor">
+                <img src="images/houses/gryffindor.jpg">
+            </div>
+
+
+            <div data-aos="fade-up" data-aos-duration="1000" class="text">
+                <p>Gryffindor values courage, bravery, nerve, and chivalry. Gryffindor's mascot is the lion, and its
+                    colours are scarlet and gold. The Head of this house is the Transfiguration Professor and Deputy
+                    Headmistress, Minerva McGonagall until she becomes headmistress, and the house ghost is Sir Nicholas
+                    de Mimsy-Porpington, more commonly known as Nearly Headless Nick. According to Rowling, Gryffindor
+                    corresponds roughly to the element of fire. The founder of the house is Godric Gryffindor.
+                    <!-- The Gryffindor common room is in one of the castle's highest towers, and its entrance is on the
+                     seventh floor in the east wing of the castle and is guarded by a painting of The Fat Lady, who is
+                     garbed in a pink dress. She permits entry only after being given the correct password, as was distinguished in
+                     the third book, when Sirius Black tried forcing entry into the tower--></p>
+            </div>
+
+
+        </div>
+
+        <div class="house">
+            <div data-aos="fade-up" data-aos-duration="1300" class="house-show hufflepuff">
+                <img src="images/houses/hufflepuff.jpg">
+            </div>
+
+
+            <div data-aos="fade-up" data-aos-duration="1300" class="text">
+                <p>Hufflepuff values hard work, patience, justice, and loyalty. The house mascot is the badger, and
+                    canary yellow and black are its colours. The Head of this house is the Herbology Professor Pomona
+                    Sprout, and the house ghost is The Fat Friar. According to Rowling, Hufflepuff corresponds roughly
+                    to the
+                    element of earth. The founder of this house is Helga Hufflepuff. The entrance to the Hufflepuff
+                    dormitories and common room entrance is concealed in a pile of large barrels in an alcove in the
+                    corridor that
+                    holds the kitchen.<!-- To enter, one must tap the barrel two from the bottom in the middle of the second row
+                    in the rhythm of "Helga Hufflepuff". Unlike any other house, the Hufflepuff common room has a repelling
+                    device that douses the illegal entrant in vinegar if the wrong lid is tapped or the rhythm is wrong. The
+                    Hufflepuff common room is
+                    filled with yellow hangings.--></p>
+            </div>
+
+
+        </div>
+
+
+        <div class="house">
+            <div data-aos="fade-up" data-aos-duration="1600" class="house-show ravenclaw">
+                <img src="images/houses/ravenclaw.jpg">
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1600" class="text">
+                <p> Ravenclaw values intelligence, creativity, learning, and wit. The house mascot is an eagle
+                    and the house colours are blue and bronze (blue and grey in the films). The head of this house is
+                    the Charms teacher, Professor Filius Flitwick, and the house ghost is The Grey Lady. According to
+                    Rowling, Ravenclaw corresponds roughly to the element of air. The founder of this house is Rowena
+                    Ravenclaw. The dormitories are in Ravenclaw Tower, on the west side of Hogwarts. <!--The common room,
+                    which went
+                    undescribed in the series until the climax of Deathly Hallows, is round and filled with blue
+                    hangings and armchairs, has a domed ceiling painted with stars and features a replica statue of
+                    Rowena
+                    wearing her diadem. Harry also notes that Ravenclaws "have a spectacular view of the surrounding
+                    mountains".
+                    A logical riddle must be solved.--></p>
+            </div>
+
+
+        </div>
+        <div class="house">
+
+            <div data-aos="fade-up" data-aos-duration="1900" class="house-show slytherin">
+                <img src="images/houses/slytherin.jpg">
+
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="1900" class="text">
+                <p>
+                    Slytherin values ambition, cunning, leadership, and resourcefulness; the Sorting Hat said in Harry
+                    Potter and the Philosopher's Stone that Slytherins will do anything to get their way. The house
+                    mascot of Slytherin is the serpent, and the house colours are green and silver. The Head of House is
+                    Professor Severus Snape until the seventh book. Then, Professor Horace Slughorn, the previous Head
+                    of House, comes out of retirement reassuming authority after Snape becomes headmaster. <!--The ghost of
+                    Slytherin house is The Bloody Baron. According to Rowling, Slytherin corresponds roughly to the
+                    element of water. The founder of this house is Salazar Slytherin. The Slytherin dormitories and common room are reached through a bare stone wall in the dungeons. The
+                    Slytherin common room is a long, low, dungeon-style room, under the Hogwarts Lake, furnished with
+                    green
+                    lamps and carved armchairs.-->
+                </p>
+            </div>
+
+
+        </div>
+
+    </article>
+
+    <h2 id="subjects" class="subject">Some of the subjects learned in Hogwarts</h2>
+    <article class="subjects">
+
+        <div data-aos="fade-up" data-aos-duration="1000" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-astronomy.jpg"/>
+            </div>
+            <h3>Astronomy</h3>
+            <div class="text">
+                <p>Astronomy is the only field of study at Hogwarts that has a direct equivalent in the Muggle world.
+                    Astronomy classes take place in the Astronomy Tower, the tallest tower in Hogwarts, and areby
+                    Professor Aurora Sinistra.</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1100" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-care.jpg"/>
+            </div>
+            <h3>Care of Magical Creatures</h3>
+            <div class="text">
+                <p>Care of Magical Creatures is the class which instructs students on how to care for magical beasts.
+                    Classes are held outside the castle. In Harry's first two years,the class is taken by
+                    Professor Silvanus Kettleburn.</p>
+            </div>
+        </div>
+
+
+        <div data-aos="fade-up" data-aos-duration="1200" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-charms.jpg"/>
+            </div>
+            <h3>Charms</h3>
+            <div class="text">
+                <p>Charms is the type of spells concerned with giving an object new and unexpected properties, and hence
+                    this class mainly consists on learning those sorts of spells. Charms classes are described as
+                    notoriously noisy and chaotic. </p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1300" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-defence.jpg"/>
+            </div>
+            <h3>Defence Against the Dark Arts</h3>
+            <div class="text">
+                <p>The subject has an extraordinarily high turnover of staff members — throughout Harry Potter's time at
+                    Hogwarts, no Defence Against the Dark Arts teacher has remained at Hogwarts for more year. </p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1400" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-divination.jpeg"/>
+            </div>
+            <h3>Divination</h3>
+            <div class="text">
+                <p>Divination is the art of predicting the future. Various methods are described, including tea
+                    leaves, Fire-omens, Crystal balls, Palmistry, Cartomancy  (including the reading of conventional
+                    playing cards and the tarot), astrology, and Dream interpretations.</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1500" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-flying.jpg"/>
+            </div>
+            <h3>Flying</h3>
+            <div class="text">
+                <p>1991 first year flying lesson, taught by Rolanda Hooch
+                    Flying is the class that teaches the use of broomsticks made for the use of flyingand is taught only
+                    to Hogwarts first years[citation needed] by Rolanda Hooch.</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1600" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-herbology.jpg"/>
+            </div>
+            <h3>Herbology</h3>
+            <div class="text">
+                <p>1993 second year Herbology lesson, taught by Pomona Sprout
+                    Herbology is the study of magical plants and how to take care of, utilise and ombat them. There are
+                    at least three greenhouses, holding a variety of magical plants of varying degrees of lethality.</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1700" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-history.jpg"/>
+            </div>
+            <h3>History of Magic</h3>
+            <div class="text">
+                <p>History of Magic is the study of magical history. Cuthbert Binns' lessons are depicted as some of the
+                    most boring at Hogwarts. They are only lectures, given without pause, about significant events in
+                    wizarding history. Topics have included Goblin Rebellions, Giant wars, and the origins of wizarding
+                    secrecy.</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1800" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-potions.jpg"/>
+            </div>
+            <h3>Potions</h3>
+            <div class="text">
+                <p>Potions is described as the art of creating mixtures with magical effects. It requires the correct
+                    mixing and stirring of ingredients at the right times and temperatures. Snape's lessons are depicted
+                    as unhappy, oppressing times set in a gloomy dungeon in the basement of the castle. </p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="1900" class="subject">
+
+            <div class="frame">
+                <img src="images/subjects/subject-transfiguration.jpg"/>
+            </div>
+            <h3>Transfiguration</h3>
+            <div class="text">
+                <p>Transfiguration is the art of changing the form or appearance of an object, and hence this is what
+                    this class teaches. Transfiguration is a theory-based subject, including topics such s "Switching
+                    Spells" (altering only a part of some object, such as giving a human rabbit's ears).</p>
+            </div>
+        </div>
+
+
+    </article>
+    <h2 id="quidditch" class="quidditch">Something about Quidditch</h2>
+    <article class="quidditch">
+        <div class="text grid">
+            <p>Quidditch is an exciting and dynamic game that is based on the fictional game of Quidditch popularised in
+                the Harry Potter books. Played by two teams consisting of seven players each, it is designed to mirror
+                the book version of the game as much as possible. The most obvious way this is done is that each player
+                is
+                mounted on a broomstick and attempts to win the game by having more points than their opponents by the
+                time the Golden Snitch is caught (which in this version of the game, is a tennis ball in a long yellow
+                sock).
+                Quidditch is one of the world’s youngest games but one that is growing in popularity all the time.
+                Created in 2005, Quidditch even has its own governing body, the International Quidditch Association
+                (IQA) who
+                are in charge of the sport’s rules and regulations. According to the IQA, the sport is now played by
+                over 300
+                teams in over 20 countries. The object of the game of Quidditch is to score more points than your
+                opponents. Players do this by
+                scoring goals which is done by placing a slightly deflated volleyball called the Quaffle into the
+                opposition's
+                baskets giving them 10 points, and by capturing the Golden Snitch which is worth 30 points.
+                Players & Equipment In Quidditch, each team is made up of 7 players. One Seeker, one Keeper, two Beaters
+                and three Chasers –</p>
+            <p> each of which have a specific task. The Chasers are there to try and keep possession of the Quaffle and
+                to score a goal by throwing it
+                through one of the opponent’s three hoops. They can pass the ball between each other but only one is
+                allowed to
+                enter into the scoring zone at any one time.
+                The two Beaters throw Bludgers and these are thrown at the opposition to disrupt them. The other side’s
+                Beaters, in turn, throw them back with the same intention. The players in this position are usually the
+                strongest and most physical within the team. The Keeper is a defensive player and is tasked with
+                defending the team’s hoops.
+                Lastly, the Seeker is the team member whose job is to capture the all-important Golden Snitch.
+                The equipment needed to play Quidditch includes: Broomstick: All players must stay mounted on a
+                broomstick, which can be made out of a variety of
+                materials including wood or PVC piping. The broom must also be held between the legs all the time.
+                Hoops: Three hoops are situated at each end of the pitch, all at different heights (2m, 1.4m and 1m).
+                They are placed approximately two broomsticks apart with the tallest on the left. Quaffle: This is ball
+                in the game that only
+                Chasers and Keepers can utilise. It’s a volleyball that has been deflated and is what the Chasers must
+                try to
+                throw through into the hoops in order to score points. Bludgers: These are slightly deflated dodgeballs
+                and can only be used by Beaters.</p>
+
+            <p>There are three of them
+                on the pitch at any one time and Beaters throw these at the opposition to ‘knock them out’, which means
+                the
+                opposition player has to stop what they are doing, dismount, and run back to their own hoops and touch
+                them
+                before resuming play.
+                Golden Snitch: This is a tennis ball placed in a long yellow sock, which is then attached to a ‘Snitch
+                Runner’. A ‘Snitch Runner’ is a neutral player who tries to avoid each team’s Seeker, which is the only
+                position to be able to catch the Golden Snitch. Capturing the Golden Snitch ends the game immediately.
+                Scoring
+                There are two ways to score during a game of Quidditch. Firstly, the Chasers can score a goal by getting
+                possession of the Quaffle, then entering the opposition's scoring area and throwing it successfully
+                through
+                one of the three hoops. This gives the team 10 points. The second way to score points is for the Seeker
+                to
+                gain possession of the Golden Snitch. Doing so, scores the team 30 points and immediately ends the game.
+                Winning the Game
+                There is a common misunderstanding in Quidditch that the team that captures the Golden Snitch is the
+                team
+                that wins the match. This is technically incorrect, as the winner of the match is the team with the most
+                points.
+                Because the Snitch is worth 30-points and the game ends as soon as it is captured, the winner is almost
+                always the team that captured it. This is not always the case, however, as technically, a team can still
+                win
+                the game even if they haven’t captured the Golden Snitch just as long as they have more points than the
+                opposing team.</p>
+        </div>
+    </article>
+
+</section>
+<footer id="contact">
+    <!-- contact form -->
+
+    <div class="bg-contact100">
+        <div class="container-contact100">
+            <div class="wrap-contact100">
+                <div class="contact100-pic js-tilt" data-tilt>
+                    <img src="images/photo-form.jpg" alt="IMG">
+                </div>
+
+                <form class="contact100-form validate-form">
+					<span class="contact100-form-title">
+						<h2>CONTACT US</h2>
+					</span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <input class="input100" type="text" name="name" placeholder="Name">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="email" placeholder="Email">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Message is required">
+                        <textarea class="input100" name="message" placeholder="Message"></textarea>
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="container-contact100-form-btn">
+                        <button class="contact100-form-btn">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <p>Hogwarts School of Witchcraft and Wizardry 2018</p>
+    </div>
+
+
+</footer>
+
+<!-- contatct form -->
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="./js/form-validate.js"></script>
+</body>
+</html>

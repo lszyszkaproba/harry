@@ -1,0 +1,504 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-weight: 400;
+  line-height: 1.5; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  word-break: break-word;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #131615;
+  line-height: 1.25;
+  font-size: 1.3em;
+  /*  background-attachment: fixed;
+    background-size: 100vh;*/ }
+
+body:before {
+  content: '';
+  background: url("../images/bg-photo-2.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1; }
+
+::selection {
+  color: #fff;
+  background: rgba(158, 0, 49, 0.75); }
+
+h1 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 3em;
+  padding: 2vw 0;
+  height: 15vw; }
+
+@media screen and (max-width: 960px) {
+  h1 {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 0;
+    height: auto; } }
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.3em; } }
+h2 {
+  font-size: 2.5em;
+  text-transform: uppercase; }
+
+h2, h3, h4, h5 {
+  font-weight: bold;
+  font-style: normal; }
+
+.nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 8.25%;
+  height: 100%;
+  background: #131615;
+  clip-path: circle(29px at calc(8.25% - 2.5vw - 30px) calc(5vh + 30px));
+  transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  z-index: 5; }
+  .nav.active {
+    clip-path: circle(75% at 4.125% 50vh); }
+  .nav__link {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    text-align: right;
+    padding: 1vh 5vw;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    opacity: 0;
+    transform: translateY(50%);
+    writing-mode: tb-rl; }
+    .nav__link:nth-child(1) {
+      transition-delay: 0.11s; }
+    .nav__link:nth-child(2) {
+      transition-delay: 0.22s; }
+    .nav__link:nth-child(3) {
+      transition-delay: 0.33s; }
+    .nav__link:nth-child(4) {
+      transition-delay: 0.44s; }
+    .nav__link:nth-child(5) {
+      transition-delay: 0.55s; }
+    .nav__link.active {
+      opacity: 1;
+      transform: translateY(0); }
+
+.hamburger {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  z-index: 10;
+  top: 5vh;
+  right: 2.5vw;
+  background: #131615;
+  /*
+  @media screen and (max-width: 960px) {
+    .hamburger {
+      right: 1vw;
+    }
+  }
+  */ }
+  .hamburger__patty {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    width: 50%;
+    backgroud-clip: padding-box;
+    background: #f7f7f7;
+    transition: all 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+    .hamburger__patty:nth-child(1) {
+      transform: translate(-50%, calc(-50% - 8px)); }
+    .hamburger__patty:last-child {
+      transform: translate(-50%, calc(-50% + 8px)); }
+  .hamburger.active .hamburger__patty {
+    background: #ffffff; }
+    .hamburger.active .hamburger__patty:nth-child(1) {
+      transform: translate(-50%, -50%) rotate(45deg); }
+    .hamburger.active .hamburger__patty:nth-child(2) {
+      opacity: 0; }
+    .hamburger.active .hamburger__patty:nth-child(3) {
+      transform: translate(-50%, -50%) rotate(-45deg); }
+
+.quote-button {
+  cursor: pointer;
+  font-family: 'Cormorant Garamond', Georgia, serif; }
+
+section {
+  width: 91.75%;
+  padding-left: 8.25%; }
+
+@media screen and (max-width: 960px) {
+  section {
+    width: 93%; } }
+img {
+  min-width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+html::after {
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background: url("../images/siatka.png") 0 0 repeat-y;
+  background-size: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100000000;
+  opacity: 1;
+  pointer-events: none; }
+
+body {
+  /*  background-image: url('../images/hogwart-bg.jpg');*/
+  background-size: 100vh; }
+
+/*quotation*/
+.quotation {
+  background-image: url("../images/quote-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  padding: 0 18.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative; }
+  .quotation h2 {
+    padding-top: 0vw;
+    margin-top: -1vw;
+    padding-bottom: 2vw;
+    font-size: 1.6em;
+    color: #cdcdcd;
+    float: right; }
+  .quotation .quote {
+    padding-top: 5vw; }
+
+@media screen and (max-width: 960px) {
+  .quotation h2 {
+    font-size: .9em; } }
+@media screen and (max-width: 640px) {
+  .quotation h2 {
+    font-size: .6em; } }
+p {
+  word-break: break-word; }
+
+@media screen and (max-width: 960px) {
+  .quotation {
+    height: 60vh; }
+
+  .info {
+    font-size: 0.5em; } }
+#quote-display {
+  position: relative; }
+
+#quote-display:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff; }
+
+#quote-display:after {
+  content: "\201D";
+  position: absolute;
+  top: -0.15em;
+  left: -0.30em;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 3em;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: bold; }
+
+/*button*/
+.quote-button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  width: 48%;
+  font-size: 1.6em;
+  padding: 0 0em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: auto !important;
+  text-align: center; }
+
+@media screen and (max-width: 960px) {
+  .quote-button {
+    width: 100%;
+    font-size: 1em; } }
+.quote-button:hover {
+  background: rgba(56, 56, 56, 0.45);
+  color: #fff; }
+
+.quote-button:before, .quote-button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #2f2f2f;
+  transition: 400ms ease all; }
+
+.quote-button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0; }
+
+.quote-button:hover:before, .quote-button:hover:after {
+  width: 100%;
+  transition: 800ms ease all; }
+
+/*about*/
+.about {
+  display: grid;
+  grid-template-columns: 25% 41% 29.55%;
+  grid-template-rows: auto;
+  grid-gap: 2.25%;
+  padding: 2.25vw 0;
+  margin-left: -7.25%; }
+
+@media screen and (max-width: 960px) {
+  .about {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    padding: 2.25vw 0;
+    margin-left: 0; } }
+.about p {
+  margin: 0; }
+
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 0.75vw;
+  position: relative; }
+
+.about h2:after {
+  /*  content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 0;
+    background: #9e0031;*/ }
+
+.about .col-center {
+  line-height: 1.5; }
+
+.about img {
+  padding-bottom: 0.5vw; }
+
+.frame.full-width {
+  width: 64.65vw;
+  padding: 2.25vw 0; }
+
+@media screen and (max-width: 960px) {
+  .frame.full-width {
+    width: 100%; } }
+.frame.left-bottom {
+  padding-top: 35.25em; }
+
+@media screen and (max-width: 960px) {
+  .frame.left-bottom {
+    padding-top: 0em; }
+
+  .frame.right-side {
+    padding-top: 0em; } }
+/*houses*/
+/*h2.characteristic,
+h2.subject,
+h2.quidditch {
+  padding-left: 21.85%;
+}*/
+.houses {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-template-rows: auto;
+  grid-gap: 4%; }
+  .houses img {
+    margin: -0.7vw 0;
+    mix-blend-mode: screen;
+    background-color: white; }
+
+@media screen and (max-width: 960px) {
+  .houses {
+    display: flex;
+    flex-direction: column; }
+
+  #houses {
+    margin-top: 0; } }
+.house {
+  position: relative; }
+  .house .house-show {
+    transition: all 0.5s ease-in-out;
+    background-color: transparent; }
+
+.house .gryffindor:before {
+  position: absolute;
+  content: "Gryffindor";
+  width: 100%;
+  top: calc(50% - 0.55em);
+  left: 0;
+  /*  padding: 0 3vw;*/
+  font-size: 3em;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  background: #831212; }
+
+.house .hufflepuff:before {
+  position: absolute;
+  content: "Hufflepuff";
+  width: 100%;
+  top: calc(50% - 0.55em);
+  left: 0;
+  /*  padding: 0 3vw;*/
+  font-size: 3em;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  background: #3b4612; }
+
+.house .ravenclaw:before {
+  position: absolute;
+  content: "Ravenclaw";
+  width: 100%;
+  top: calc(50% - 0.55em);
+  left: 0;
+  /*  padding: 0 3vw;*/
+  font-size: 3em;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  background: #042928; }
+
+.house .slytherin:before {
+  position: absolute;
+  content: "Slytherin";
+  width: 100%;
+  top: calc(50% - 0.55em);
+  left: 0;
+  /*  padding: 0 3vw;*/
+  font-size: 3em;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  background: #062d11; }
+
+.house .house-show:hover {
+  position: relative; }
+
+/*.subject .frame:hover {
+  transform: rotate(360deg);
+  transition: all 2s ease-in-out;
+
+}*/
+/*subjects*/
+.subject .frame img:hover {
+  box-shadow: 0 0 10px black;
+  transition: all 0.3s ease-in-out; }
+
+.subject h3 {
+  font-weight: 900;
+  font-variant: small-caps;
+  font-size: 1.47em;
+  background: rgba(142, 0, 69, 0.28);
+  margin: 0; }
+
+.subjects {
+  display: grid;
+  grid-template-columns: 16.5% 16.5% 16.5% 16.5% 16.5%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 0 4.4%; }
+
+@media screen and (max-width: 960px) {
+  .subjects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: none;
+    grid-gap: 0 4.4%; } }
+/*
+.subjects .subject img {
+  border-radius: 50%;
+}
+*/
+.more {
+  display: none; }
+
+/*quidditch*/
+#quidditch {
+  margin-bottom: 0; }
+
+.quidditch .text.grid {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: auto;
+  grid-column-gap: 2%; }
+
+@media screen and (max-width: 960px) {
+  .quidditch .text.grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-column-gap: 2%; } }
+/*footer*/
+.bottom-footer {
+  padding: 0.2vw 0;
+  background: #131615; }
+
+.bottom-footer p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.1em;
+  padding-left: 65.55%; }
+
+#date {
+  font-size: 2em; }
+
+#time {
+  font-size: 2em; }
+
+@media screen and (max-width: 960px) {
+  .frame.about9 {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
