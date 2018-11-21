@@ -13,6 +13,7 @@ body {
   color: #131615;
   line-height: 1.25;
   font-size: 1.3em;
+
   /*  background-attachment: fixed;
     background-size: 100vh;*/
 }
@@ -25,6 +26,7 @@ body:before {
   height: 100vh;
   position: fixed;
   z-index: -1;
+
 }
 
 ::selection {
@@ -53,6 +55,12 @@ h1 {
 @media screen and (max-width: 640px) {
   h1 {
     font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 1em;
   }
 }
 
@@ -112,6 +120,28 @@ h2, h3, h4, h5 {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    width: 10.25%;
+    align-items: center;
+    padding-bottom: 35vw;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav {
+    width: 16.25%;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav {
+    width: 21.25%;
+
   }
 }
 
@@ -255,6 +285,12 @@ body {
 @media screen and (max-width: 640px) {
   .quotation h2 {
     font-size: .6em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .quotation h2 {
+    font-size: .5em;
   }
 }
 
@@ -449,6 +485,12 @@ h2.quidditch {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .houses {
+    grid-template-columns: 50% 50%;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .houses {
     display: flex;
@@ -564,10 +606,19 @@ h2.quidditch {
   grid-gap: 0 4.4%;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .subjects {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: none;
+    grid-gap: 0 4.4%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .subjects {
+    display: grid;
+    grid-template-columns: 100%;
     grid-template-rows: none;
     grid-gap: 0 4.4%;
   }
@@ -635,7 +686,11 @@ h2.quidditch {
   }
 }
 
-@media screen and (max-width: 640px) {
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
   .desktop {
     display: none;
   }
@@ -644,6 +699,18 @@ h2.quidditch {
   }
 }
 
-.mobile {
-  display: none;
+.slider {
+  width: 100%;
+  height: 30em;
+  margin: 0 auto;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 50% 50% !important;
+}
+
+.item.active {
+  display: grid !important;
+  grid-template-columns: 50% 50% !important;
 }
