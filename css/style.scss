@@ -13,7 +13,6 @@ body {
   color: #131615;
   line-height: 1.25;
   font-size: 1.3em;
-
   /*  background-attachment: fixed;
     background-size: 100vh;*/
 }
@@ -41,21 +40,20 @@ h1 {
   height: 15vw;
 }
 
-@media screen and (max-width: 960px){
- h1 {
-   font-weight: 900;
-   font-style: italic;
-   font-size: 1.5em;
-   padding: 0;
-   height: auto;
- }
+@media screen and (max-width: 960px) {
+  h1 {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 0;
+    height: auto;
+  }
 }
 
-
-@media screen and (max-width: 640px){
- h1 {
-   font-size: 1.3em;
- }
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.3em;
+  }
 }
 
 h2 {
@@ -157,7 +155,6 @@ h2, h3, h4, h5 {
   }
   */
 
-
   &.active {
 
     #{$p}__patty {
@@ -188,7 +185,7 @@ section {
   padding-left: 8.25%;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
   section {
     width: 93%;
 
@@ -249,18 +246,17 @@ body {
   }
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
   .quotation h2 {
     font-size: .9em;
   }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
   .quotation h2 {
     font-size: .6em;
   }
 }
-
 
 p {
   word-break: break-word;
@@ -318,7 +314,7 @@ p {
   text-align: center;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
   .quote-button {
     width: 100%;
     font-size: 1em;
@@ -410,6 +406,7 @@ p {
   width: 64.65vw;
   padding: 2.25vw 0;
 }
+
 @media screen and (max-width: 960px) {
   .frame.full-width {
     width: 100%;
@@ -632,8 +629,21 @@ h2.quidditch {
   font-size: 2em;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
   .frame.about9 {
     display: none;
   }
+}
+
+@media screen and (max-width: 640px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+.mobile {
+  display: none;
 }
